@@ -54,8 +54,11 @@ export function SalesList() {
     }
 
     return (
+        <div>
+        <h1> Informe de Ventas Actuales- G5.0</h1>
         <Table className={classes.table}>
                 <TableHead>
+                
                 <br></br>
                 <br></br>            
                     <br></br>
@@ -92,8 +95,9 @@ export function SalesList() {
                                 }
                             </TableRow>
                         ))
-                    }
+                    } 
                 </TableBody>
             </Table>
+            </div>
     )
 }

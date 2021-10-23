@@ -1,8 +1,8 @@
 import axios from "axios";
 import jwtDecode from "jwt-decode";
 
-const authUrl = "https://radiant-headland-05086.herokuapp.com/auth"; //prod
-//const authUrl = "http://localhost:3002/auth"; //dllo
+//const authUrl = "https://radiant-headland-05086.herokuapp.com/auth"; //prod
+const authUrl = "http://localhost:3002/auth"; //dllo
 
 export const authHeaders = {
     "auth-token":localStorage.getItem("token") 
