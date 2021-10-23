@@ -1,0 +1,18 @@
+1. Crear componentes apra el crud de productos -- lista
+    listar
+    crear
+    editar
+    1.1 Crear menu de navegacion para mi crud
+
+2. Listar productos solicitadps al backend -- lista
+3. Eliminar productos -- lista
+4. Publicar productos al backend -- lista
+5. Editar productos -- lista
+
+auth tareas
+1. construir un servicio asociado 
+a la autorizacion y autenticacion
+2. crear componente de login y registro e inyectario
+el servicio de auth
+3. restringir las rutas de mi aplicativo con el 
+servicio auth
