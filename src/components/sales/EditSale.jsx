@@ -73,13 +73,13 @@ export function EditSale() {
 
     const [creatingProductState, setCreatingProductState] = useState('minimizado');
 
-    const { productos, fecha, valor, nombreCliente, idCliente, idVendedor } = sale;
+    const { productos, fecha, valor, idCliente, nombreCliente , idVendedor } = sale;
 
     const loadSaleData = async () => {
         let response = await getSale(id);
         response.data.data.productos.forEach(element => {
-            element.descripcion = products.find(item => item._id === element._id).descripcion
-        });
+            element.descripcion = products.find(item => item._id === element._id)
+        }); 
         setSale(response.data.data);
     }
 
@@ -140,11 +140,11 @@ export function EditSale() {
                 </FormControl>
                 <FormControl>
                     <InputLabel htmlFor="my-input">Valor</InputLabel>
-                    <Input onChange={(e) => onValueChange(e)} type="number" name="valor" value={valor} id="my-input" />
+                    <Input onChange={(e) => onValueChange(e)} name="valor" value={valor} id="my-input" />
                 </FormControl>
                 <FormControl>
                     <InputLabel htmlFor="my-input">Id Cliente</InputLabel>
-                    <Input onChange={(e) => onValueChange(e)} type="number" name="idCliente" value={idCliente} id="my-input" />
+                    <Input onChange={(e) => onValueChange(e)} name="idCliente" value={idCliente} id="my-input" />
                 </FormControl>
                 <FormControl>
                     <InputLabel htmlFor="my-input">Nombre Cliente</InputLabel>
@@ -208,11 +208,11 @@ export function EditSale() {
                                     )
                                 }
                             </TableCell>
-                            <TableCell>
+                            {/* <TableCell>
                                 Descripcion {creatingProductState === 'desplegado' &&
                                     (<>: {newProduct.descripcion}</>)
                                 }
-                            </TableCell>
+                            </TableCell> */}
                             <TableCell className={classes.button_add}>
                                 {creatingProductState === 'minimizado' && (
                                     <Button variant="contained" onClick={() => changeStateCreateProductForm('desplegado')} >Agregar</Button>
@@ -230,7 +230,7 @@ export function EditSale() {
                                     <TableCell>{product._id}</TableCell>
                                     <TableCell>{product.valor}</TableCell>
                                     <TableCell>{product.cantidad}</TableCell>
-                                    <TableCell>{product.descripcion}</TableCell>
+                                    {/* <TableCell>{product.descripcion}</TableCell> */}
                                     <TableCell>
                                         <Button variant="contained" color="secondary" onClick={() => deleteProduct(product._id)} >X</Button>
                                     </TableCell>

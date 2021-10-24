@@ -96,7 +96,7 @@ export function SaleDetail() {
                 <TableHead>
                     <TableRow className={classes.thead}>
                         <TableCell>Id Producto</TableCell>
-                        <TableCell>Descripcion Producto</TableCell>
+                       {/*  <TableCell>Descripcion Producto</TableCell> */}
                         <TableCell>Valor Unitario Producto</TableCell>
                         <TableCell>Cantidad </TableCell>
                     </TableRow>
@@ -106,7 +106,7 @@ export function SaleDetail() {
                         sale.productos.map(product => (
                             <TableRow className={classes.row} key={product._id}>
                                 <TableCell>{product._id}</TableCell>
-                                <TableCell>{product.descripcion}</TableCell>
+                               {/*  <TableCell>{product.descripcion}</TableCell> */}
                                 <TableCell>{product.valor}</TableCell>
                                 <TableCell>{product.cantidad}</TableCell>
                             </TableRow>
