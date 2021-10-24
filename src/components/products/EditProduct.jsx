@@ -4,23 +4,11 @@ import { editProduct, getProduct } from '../../services/ProductService';
 import { useHistory, useParams } from 'react-router-dom';
 import { verifyToken } from '../../services/AuthService'
 
-
-
 const initialValue = {
     valor: '',
     descripcion: '',
     estado: true,
 }
-
-
-
-
-
-
-
-
-
-
 
 const useStyles = makeStyles({
     container: {
@@ -31,10 +19,6 @@ const useStyles = makeStyles({
         }
     }
 })
-
-
-
-
 
 export function EditProduct() {
     const [product, setProduct] = useState(initialValue);

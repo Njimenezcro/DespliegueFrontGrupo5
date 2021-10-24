@@ -133,13 +133,13 @@ export function EditSale() {
     return (
         <>
             <FormGroup className={classes.container}>
-                <Typography variant="h4">Editar Venta</Typography>
+                <Typography variant="h4">Editar Datos de la Venta - G5</Typography>
                 <FormControl>
-                    <InputLabel htmlFor="my-input">Id</InputLabel>
+                    <InputLabel htmlFor="my-input">Id de la Venta</InputLabel>
                     <Input  type="text" readOnly disabled  value={id} id="my-input" />
                 </FormControl>
                 <FormControl>
-                    <InputLabel htmlFor="my-input">Valor</InputLabel>
+                    <InputLabel htmlFor="my-input">Valor Total Venta</InputLabel>
                     <Input onChange={(e) => onValueChange(e)} name="valor" value={valor} id="my-input" />
                 </FormControl>
                 <FormControl>
@@ -155,7 +155,7 @@ export function EditSale() {
                     <Input onChange={(e) => onValueChange(e)} type="number" name="idVendedor" value={idVendedor} id="my-input" />
                 </FormControl>
                 <FormControl compMMonent="fieldset">
-                    <FormLabel component="legend">Fecha</FormLabel>
+                    <FormLabel component="legend">Fecha Modificacion Venta</FormLabel>
                     <Input name="fecha" value={fecha} onChange={(e) => onValueChange(e)} type="date" />
                 </FormControl>
                 <Table className={classes.table}>
@@ -240,7 +240,7 @@ export function EditSale() {
                     </TableBody>
                 </Table>
                 <FormControl>
-                    <Button variant="contained" onClick={() => editSaleData()} color="primary">Editar Venta</Button>
+                    <Button variant="contained" onClick={() => editSaleData()} color="primary"> Confirmar Cambios en Edicion de Venta</Button>
                 </FormControl>
             </FormGroup>
         </>
