@@ -76,7 +76,7 @@ export function EditProduct() {
             </FormControl>
             <FormControl>
                 <InputLabel htmlFor="my-input">Valor Unitario de Producto $COP</InputLabel>
-                <Input onChange={(e) => (e)} name="valor" value={valor} id="my-input" />
+                <Input onChange={(e) => onValueChange(e)} name="valor" value={valor} id="my-input" />
             </FormControl>
             <FormControl component="fieldset">
                 <FormLabel component="legend">Estado en Bodega</FormLabel>

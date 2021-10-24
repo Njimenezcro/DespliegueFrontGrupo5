@@ -73,7 +73,7 @@ export function SaleDetail() {
         <>
             <Table className={classes.table}>
                 <TableHead>
-                    <h1> Detalle de Venta - G5.0</h1>
+                    <h1> Detalle de la Venta - G5.0</h1>
                     <br></br>
                     <br></br>
                     <br></br>
