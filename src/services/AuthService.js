@@ -1,7 +1,7 @@
 import axios from "axios";
 import jwtDecode from "jwt-decode";
 
-const authUrl = "https://radiant-headland-05086.herokuapp.com/auth"; //prod
+const authUrl = "https://aqueous-shelf-66323.herokuapp.com/auth"; //prod
 //const authUrl = "http://localhost:3002/auth"; //dllo
 
 export const authHeaders = {
