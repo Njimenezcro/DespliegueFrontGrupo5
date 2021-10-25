@@ -10,6 +10,8 @@ import { SaleDetail } from './components/sales/SaleDetail';
 import { CreateSale } from './components/sales/CreateSale';
 import { EditSale } from './components/sales/EditSale'
 
+import { UserList } from './components/users/UserList';
+
 import { Login } from "./components/Login";
 import { Signup } from "./components/Signup";
 import { Home } from "./components/Home";
@@ -38,6 +40,9 @@ export function App() {
                 <Route exact path="/productos" component={ProductList} />
                 <Route exact path="/ventas" component={SalesList} />
                 <Route exact path="/ventas/detalle/:id" component={SaleDetail} />
+                
+                <Route exact path="/usuarios" component={UserList} />
+                
                 {user && (
                     <>
                         <Route exact path="/productos/agregar" component={CreateProduct} />

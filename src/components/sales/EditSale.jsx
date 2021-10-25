@@ -139,7 +139,7 @@ export function EditSale() {
                     <Input  type="text" readOnly disabled  value={id} id="my-input" />
                 </FormControl>
                 <FormControl>
-                    <InputLabel htmlFor="my-input">Valor Total Venta</InputLabel>
+                    <InputLabel htmlFor="my-input">Valor Total Ventaccc</InputLabel>
                     <Input onChange={(e) => onValueChange(e)} name="valor" value={valor} id="my-input" />
                 </FormControl>
                 <FormControl>

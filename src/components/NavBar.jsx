@@ -50,7 +50,7 @@ export function NavBar() {
                         <NavLink className={classes.tabs} to="/">Inicio /</NavLink>
                         <NavLink className={classes.tabs} to="/productos"> Administracion de Productos /</NavLink>
                         <NavLink className={classes.tabs} to="/ventas"> Gestion de Ventas /</NavLink>
-                        
+                        <NavLink className={classes.tabs} to="/usuarios"> Gestion de Usuarios /</NavLink>
                     </Box>
                     {!user && (
                         <>
