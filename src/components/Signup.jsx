@@ -14,13 +14,14 @@ const useStyles = makeStyles({
 const initialValue = {
     fullName: '',
     email: '', 
-    password: ''
+    password: '',
+    rol: ''
 }
 
 
 export function Signup() {
     const [newUser, setNewUser] = useState(initialValue)
-    const { fullName, email, password } = newUser
+    const { fullName, email, password, rol } = newUser
 
     const classes = useStyles();
 
@@ -58,6 +59,14 @@ export function Signup() {
                     <TextField value={password} name="password" onChange={(e) => onValueChange(e)} label="Password" type="password" fullWidth required />
                 </Grid>
             </Grid>
+
+            <Grid container spacing={8} alignItems="flex-end">
+                <Grid item md={true} sm={true} xs={true}>
+                    <TextField value={rol} name="rol" onChange={(e) => onValueChange(e)} label="rol" type="rol" fullWidth required />
+                </Grid>
+            </Grid>
+
+
             <Grid container justify="center" style={{ marginTop: '10px' }}>
                 <Button variant="outlined" onClick={() => registerUser()} color="primary" style={{ textTransform: "none" }}>Registrarse</Button>
             </Grid>

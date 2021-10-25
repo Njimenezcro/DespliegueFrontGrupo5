@@ -65,12 +65,13 @@ const useStyles = makeStyles({
                         <TableCell>Id Usuario</TableCell>
                         <TableCell>Nombre Usuario</TableCell>
                         <TableCell>Email</TableCell>
-                        <TableCell>Password</TableCell>
-                        {user && (
+                        <TableCell>Rol</TableCell>
+                        {/* <TableCell>Password</TableCell> */}
+                       {/*  {user && (
                             <TableCell className={classes.button_add}>
                                 <Button variant="contained" color="primary" component={Link} to="usuarios/agregar" >Ingresar Nuevo Usuario</Button>
                             </TableCell>
-                        )}
+                        )} */}
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -80,7 +81,8 @@ const useStyles = makeStyles({
                                 <TableCell>{userD._id}</TableCell>
                                 <TableCell>{userD.fullName}</TableCell>
                                 <TableCell>{userD.email}</TableCell>
-                                <TableCell>{userD.password}</TableCell>
+                                <TableCell>{userD.rol}</TableCell>
+                                {/* <TableCell>{userD.password}</TableCell> */}
                                 {/* {user
                                     &&
 
